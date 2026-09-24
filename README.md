@@ -4,7 +4,13 @@ In Lab 1 you pick a programming language and framework of your choice, then buil
 
 The goal isn't to write a large application. It's to get comfortable packaging and running a service in a container, and to understand the moving parts around it: images, containers, ports, and volumes.
 
-I have pushed this image at the following URL: ... (complete here).
+I have pushed this image at the following URL: https://hub.docker.com/repository/docker/szabonikoletta/kubernetes-lab-api/general
+
+```bash
+docker pull szabonikoletta/kubernetes-lab-api:latest
+docker run -p 8000:8080 szabonikoletta/kubernetes-lab-api:latest
+curl http://localhost:8000/health
+```
 
 ---
 
